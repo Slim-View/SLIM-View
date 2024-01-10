@@ -7,7 +7,7 @@
 ![alt text](https://github.com/Slim-View/SLIM-View/blob/main/codaspy-Experiments-PrivSyn.png?raw=true)
 In the above figure, we show a comparison of our proposed method SLIM-View with PrivSyn. For the sake of this comparison we generated 6 random range queries workload (size 100) with dimension from 2 to 6 (for each dataset).
 
-For each of these workloads, we created the corresponding dataset and passed it to each method (workload + tensor) for evaluation. Each evaluation was repeated 10 times, and we utilized the same hyperparameters for SLIM-View as presented in the paper. For both methods, we set the epsilon value to $\epsilon = 0.1$.
+For each of these workloads, we created the corresponding dataset and passed it (workload + tensor) to each method  for evaluation. Each evaluation was repeated 10 times, and we utilized the same hyperparameters for SLIM-View as presented in the paper ($𝑎𝑙𝑙𝑜𝑐_{prop} = 0.5$,$ sample_{prop} = 0.25 $ and $\lambda = 0.05 $). For both methods, we set the epsilon value to $\epsilon = 0.1$.
 
 Based on the results depicted in the figure, our solution consistently outperforms PrivBayes by a significant margin in all conducted tests. This indicates that PrivSyn, much like PrivBayes, struggles to generate high-quality synthetic data when the input data is pre-aggregated into a count-tensor. This count-tensor possesses a specific attribute 'Measure' that captures the count of aggregated data, and the count queries on this data are performed based on this attribute: select sum(Measure) where Range.
 
