@@ -5,7 +5,7 @@
 **In 30th USENIX Security Symposium (USENIX Security 21) (pp. 929-946)**
 
 
-Each method ( Slim-View, Slim-View WW and PrivSyn) was evaluated using our datasets and workloads.
+Each method ( Slim-View, Slim-View WW and PrivSyn) was evaluated using our datasets and workloads (code in src/script/count_query_eval_privsyn.py).
 Datasets used in this experiment : 
 
   1- Name: Adult, dimensions: 15, number of rows: 48.000
